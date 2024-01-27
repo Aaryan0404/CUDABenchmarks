@@ -9,7 +9,7 @@ HIP_HOME :=  /opt/rocm
 #$(shell echo $(TEMP_HIPCC) | rev |  cut -d'/' -f4- | rev)
 
 # internal flags
-NVCCFLAGS   := -std=c++17 -O3 -arch=sm_86 --compiler-options="-O2 -pipe -Wall -fopenmp -g" -Xcompiler -rdynamic --generate-line-info  -Xcompiler \"-Wl,-rpath,$(CUDA_HOME)/extras/CUPTI/lib64/\"
+NVCCFLAGS   := -std=c++17 -O3 -arch=sm_90 --compiler-options="-O2 -pipe -Wall -fopenmp -g" -Xcompiler -rdynamic --generate-line-info  -Xcompiler \"-Wl,-rpath,$(CUDA_HOME)/extras/CUPTI/lib64/\"
 CCFLAGS     := 
 LDFLAGS     := -L$(CUDA_HOME)/lib64 -L$(CUDA_HOME)/extras/CUPTI/lib64 -lcupti -lcuda   -lnvidia-ml -lnvperf_host -lnvperf_target
 NAME 		:= cache
