@@ -93,7 +93,7 @@ double measure(int warpCount, void (*kernel)(T, T *, int)) {
   // calculations for blocksize
   const int iters = 10000;
   const int blockSize = 32 * warpCount;
-  const int blockCount = 1024;  /// constant
+  const int blockCount = 1024 * 16;  /// constant
 
   MeasurementSeries time;
 
