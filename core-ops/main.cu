@@ -200,3 +200,15 @@ int main(int argc, char **argv) {
 // TLP by varying the warp count on a SM from 1 to 32
 
 // The final output is a ILP/TLP table, with (cycles per op):
+
+// 4090
+// Num Blocks = 1
+// 4.06    2.06    1.07    1.09    1.11 
+// 2.03    1.03   0.535   0.543   0.557 
+// 1.01   0.516   0.268   0.272   0.279 
+// 0.508   0.258    0.26   0.266   0.273 
+// 0.255   0.258   0.258   0.263   0.271 
+// 0.257   0.254   0.258   0.263    0.27
+
+// H100
+// Num Blocks = 1

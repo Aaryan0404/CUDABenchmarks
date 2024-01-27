@@ -14,6 +14,7 @@ plt.style.use("bmh")
 
 order = [
     "4090",
+    "h100"
 ]
 
 
