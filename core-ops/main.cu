@@ -93,7 +93,7 @@ double measure(int warpCount, void (*kernel)(T, T *, int)) {
   // calculations for blocksize
   const int iters = 10000;
   const int blockSize = 32 * warpCount;
-  const int blockCount = 1024;  /// constant
+  const int blockCount = 1;  /// constant
 
   MeasurementSeries time;
 
@@ -201,7 +201,7 @@ int main(int argc, char **argv) {
 
 // The final output is a ILP/TLP table, with (cycles per op):
 
-// 4090
+// H100
 // Num Blocks = 1
 // 4.06    2.06    1.07    1.09    1.11 
 // 2.03    1.03   0.535   0.543   0.557 
